@@ -1,9 +1,9 @@
 import java.security.KeyStore;
 import java.util.*;
 
-public class ZooClub implements MethodForZooClub{
+public class ZooClub{
 
-    public static void main(String[] args){
+    public static void main(String[] args) throws Exception {
           Map<Person,ArrayList<Animal>> map = new HashMap<>();
           MethodForZooClub.main();
           Scanner sc = new Scanner(System.in);
@@ -23,15 +23,19 @@ public class ZooClub implements MethodForZooClub{
                   }case 3 :{
                       MethodForZooClub.DeleteAnimalSiencePerson(map);
                       MethodForZooClub.main();
+                      break;
                   }case 4 :{
                       MethodForZooClub.DeletePerson(map);
                       MethodForZooClub.main();
+                      break;
                   }case 5 :{
-                      MethodForZooClub.DeleteAnimalSiencePerson(map);
+                      MethodForZooClub.DeleteTypeAnimal(map);
                       MethodForZooClub.main();
+                      break;
                   }case 6 :{
                       MethodForZooClub.PrintAllZooClub(map);
                       MethodForZooClub.main();
+                      break;
                   }case 7 :{
                       System.exit(0);
                   }
